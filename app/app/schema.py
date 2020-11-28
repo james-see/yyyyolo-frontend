@@ -14,5 +14,4 @@ class Mutation(users.schema.Mutation, pranks.schema.Mutation, graphene.ObjectTyp
     refresh_token = graphql_jwt.Refresh.Field()
 
 
-
 schema = graphene.Schema(query=Query, mutation=Mutation)
